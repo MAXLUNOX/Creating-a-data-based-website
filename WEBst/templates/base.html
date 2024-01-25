@@ -1,0 +1,30 @@
+{% include "parts/_header.html" %}
+
+{% include "parts/_menu.html" %}
+
+<div class="container-fluid text-center">    
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <p><a href="/kitapekle">Kitap ekle</a></p>
+        <p>
+          <a href="https://github.com/MAXLUNOX" target="_blank" rel="noopener noreferrer">GitHub Hesabım</a> 
+          <br>
+          <a href="https://www.instagram.com/brmv_17.32?igsh=MW9odHByZ2Npcng2dA==" target="_blank" rel="noopener noreferrer">Instagram Hesabım</a>
+      </p>
+      </div>
+      <div class="col-sm-8 text-left"> 
+        {% block content %}
+        {% endblock %}
+      </div>
+      <div class="col-sm-2 sidenav">
+        <div class="well">
+          <p>ADS</p>
+        </div>
+        <div class="well">
+          <p>ADS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{% include "parts/_footer.html" %}

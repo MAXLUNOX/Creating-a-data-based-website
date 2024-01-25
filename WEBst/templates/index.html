@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="welcome-section">
+
+        <h2>Hoş Geldiniz!</h2>
+    </section>
+
+    <section class="book-list-section">
+        <ul>
+            {% for book in books %}
+                <li>{{ book.bookTitle }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
